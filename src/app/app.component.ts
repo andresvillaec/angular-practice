@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {HeaderComponent} from './header/header.component';
-import {LayoutComponent} from './layout/layout.component';
-import {RouterOutlet} from '@angular/router';
+import {LayoutComponent} from './layout/layout.component';import {RouterOutlet} from '@angular/router';
 import {VisitorRecordListComponent} from '../app/visitor-record/visitor-record-list/visitor-record-list.component';
 
 @Component({
