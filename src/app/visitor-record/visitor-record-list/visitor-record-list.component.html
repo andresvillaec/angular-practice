@@ -9,13 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <app-visitor-record-item
-      *ngFor="let visitor of visitorRecords; let i = index"
-      [visitor]="visitor"
-      [index]="i + 1" 
-      >
-    </app-visitor-record-item>
+    <tr scope="row" *ngFor="let visitor of visitorRecords; let i = index">
+      <th>{{index}}</th>
+      <th>{{visitor.pointOfSaleName}}</th>
+      <th>{{visitor.visitTypeDescription}}</th>
+      <th>{{visitor.startDate | date: 'short'}}</th>
+      <th>{{visitor.endDate | date: 'short'}}</th>
     </tr>
   </tbody>
 </table>

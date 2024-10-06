@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VisitorRecordItemComponent } from "../visitor-record-item/visitor-record-item.component";
 import { VisitorRecord } from "../models/visitor-record.model";
@@ -13,6 +13,10 @@ import { VisitorRecordService } from "../services/visitor-record.service";
 })
 export class VisitorRecordListComponent {
   public visitorRecords: VisitorRecord[] = [];
+   // This will receive a single record as an input from the parent component
+ @Input() visitor!: VisitorRecord;
+ @Input() index!: number;
+
   constructor(private VisitorRecordService : VisitorRecordService ) {
 
   }
