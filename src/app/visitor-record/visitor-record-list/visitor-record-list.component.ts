@@ -13,9 +13,10 @@ import { VisitorRecordService } from "../services/visitor-record.service";
 })
 export class VisitorRecordListComponent {
   public visitorRecords: VisitorRecord[] = [];
+
    // This will receive a single record as an input from the parent component
- @Input() visitor!: VisitorRecord;
- @Input() index!: number;
+  @Input() visitor!: VisitorRecord;
+  @Input() index!: number;
 
   constructor(private VisitorRecordService : VisitorRecordService ) {
 
