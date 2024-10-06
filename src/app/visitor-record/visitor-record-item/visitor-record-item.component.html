@@ -1,12 +1,6 @@
-<thead>
-  <tr>
-    <th>#</th>
-    <th>Nombre</th>
-    <th>Identicación</th>
-    <th>Fecha</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  </tr>
-</tbody>
+<tr scope="row">
+  <th>{{visitor.pointOfSaleName}}</th>
+  <th>{{visitor.visitTypeDescription}}</th>
+  <th>{{visitor.startDate | date: 'short'}}</th>
+  <th>{{visitor.endDate | date: 'short'}}</th>
+</tr>

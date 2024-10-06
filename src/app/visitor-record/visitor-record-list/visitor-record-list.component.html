@@ -1,3 +1,21 @@
 <table class="table table-striped">
-  <app-visitor-record-item></app-visitor-record-item>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th scope="col">Punto de venta</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Fecha Inicio</th>
+      <th scope="col">Fecha Fin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <app-visitor-record-item
+      *ngFor="let visitor of visitorRecords; let i = index"
+      [visitor]="visitor"
+      [index]="i + 1" 
+      >
+    </app-visitor-record-item>
+    </tr>
+  </tbody>
 </table>
